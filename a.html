@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hacked by: Malw0rmSec!</title>
+</head>
+
+
+<body background="http://www.madtomatoe.com/wp-content/uploads/2010/11/matrix-animated-image.gif" oncontextmenu="false" onLoad="type_text()" ; bgColor=#000000 text=#00FFFF>
+    <center>
+
+        <style type="text/css">
+            a {
+                text-decoration: none;
+                color: red;
+            }
+            
+            a:hover {A
+                color: lime;
+            }
+        </style>
+
+        <h1 style="color:Blue">Hacked by: <a href="https://twitter.com/Malw0rmSec" target="_blank">Malw0rmSec!</a></h1>
+        <form>
+            <textarea style="background-color:#000000;color:#32CD32;" name="about" readonly="readonly" rows="10" cols="60" wrap="soft"></textarea>
+        </form>
+        <div style="width: 600px;height: 100px;">
+            <script>
+                var tl = new Array(
+                    "Username : admin",
+                    "Password : ****************",
+                    "Logging in.....",
+                    "Accessing website....",
+                    "Critical Error : Website is Hacked by: Malw0rmSec!",
+                    "@Admin : Your Shit sucks. Fix it or you will see us again.",
+                    0 - "Peace.",
+                    "<----------------------------------------------------------->"
+                );
+                var speed = 60;
+                var index = 0;
+                text_pos = 0;
+                var str_length = tl[0].length;
+                var contents, row;
+
+                function type_text() {
+                    contents = '';
+                    row = Math.max(0, index - 20);
+                    while (row < index)
+                        contents += tl[row++] + '\r\n';
+                    document.forms[0].elements[0].value = contents + tl[index].substring(0, text_pos) + "";
+                    if (text_pos++ == str_length) {
+                        text_pos = 0;
+                        index++;
+                        if (index != tl.length) {
+                            str_length = tl[index].length;
+                            setTimeout("type_text()", 1500);
+                        }
+                    } else {
+                        setTimeout("type_text()", speed);
+                    }
+                }
+                //-->
+            </script>
+        </div>
+        <img src="https://media.giphy.com/media/vk7VesvyZEwuI/giphy.gif" />
+        <!-- below is Malw0rmSec's Twitter picture, uncomment the below line and comment out the above line (59) -->
+        <!-- <img src="https://pbs.twimg.com/profile_images/766702466482245632/WHRhg7jc.jpg" /> -->
+    </center>
+</body>
